@@ -1,0 +1,276 @@
+/* aside */
+/* aside base */
+.social{
+    display: flex;
+    height: 150px;
+    background-color: map-get($map: $palette, $key:"color-claro");
+    justify-content: center;
+}
+
+.social ul{
+    display: flex;
+    margin: auto;
+}
+
+.social ul li{
+    list-style: none;
+    margin: auto 150px auto 150px;
+}
+
+.social ul li .bx{
+    font-size: 50px;
+    line-height: 60px;
+    transition: .6s;
+    color: map-get($map: $palette, $key: "color-logo");
+}
+
+.social ul li .bx:hover{
+    color: map-get($map: $palette, $key: "color-claro");
+}
+
+.social ul li a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px map-get($map: $palette, $key:"color-oscurofooter");
+}
+
+.social ul li a:hover{
+    transform: translate(0, -10px);
+}
+
+
+.info {
+    height: 250px;
+    background-color: map-get($map: $palette, $key:"color-oscuro");
+    display: flex;
+}
+
+.info-1 , .info-2 , .info-3{
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.info div .bx{
+    color: map-get($map: $palette, $key:"color-claro");
+    font-size: 50px;
+}
+
+.info div p{
+    color: map-get($map: $palette, $key:"color-letras");
+}
+/* aside responsive */
+@media (max-width: $break737) and (min-width: $break50){
+    .social{
+        height: 50px;
+        margin-top: 5px;
+    }
+    .social ul {
+        margin: 0%;
+        padding: 0%;
+        width: 576px;
+        height: 50px;
+    }
+
+    .social ul li{
+        margin: auto;
+    }
+
+    .social ul li .bx{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .social ul li a{
+        width: 30px;
+        height: 30px;
+    }
+
+    .info{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .info-1 , .info-2 , .info-3 {
+        border: none;
+        padding: 0%;
+        margin: 0%;
+        font-size: 10px;
+    }
+
+    .info div .bx{
+        font-size: 30px;
+        padding-top: 4px;;
+    }
+
+}
+
+@media (max-width: $break915) and (min-width: $break738) {
+    .social{
+        height: 100px;
+        margin-top: 10px;
+    }
+    .social ul {
+        margin: 0%;
+        padding: 0%;
+        width: 768px;
+        height: 100px;
+    }
+
+    .social ul li{
+        margin: auto;
+    }
+
+    .social ul li .bx{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .social ul li a{
+        width: 50px;
+        height: 50px;
+    }
+
+    .info{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .info-1 , .info-2 , .info-3 {
+        border: none;
+        padding: 0%;
+        margin: 0%;
+        font-size: 20px;
+    }
+
+    .info div .bx{
+        font-size: 55px;
+    }
+
+}
+
+@media (max-width: $break1100) and (min-width: $break916){
+    .social{
+        height: 100px;
+        margin-top: 10px;
+    }
+    .social ul {
+        margin: 0%;
+        padding: 0%;
+        width: 1440px;
+        height: 100px;
+    }
+
+    .social ul li{
+        margin: auto;
+    }
+
+    .social ul li .bx{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .social ul li a{
+        width: 50px;
+        height: 50px;
+    }
+
+    .info {
+        height: 180px;
+    }
+    
+    .info-1 , .info-2 , .info-3{
+        font-size: 20px;
+    }
+    
+    .info div .bx{
+        color: map-get($map: $palette, $key: "color-claro");
+        font-size: 50px;
+    }
+    
+    .info div p{
+        color: map-get($map: $palette, $key: "color-letras");
+    }
+    
+}
+
+@media (max-width: $break1450) and (min-width: $break1101) {
+    .social{
+        height: 100px;
+        margin-top: 10px;
+    }
+    .social ul {
+        margin: 0%;
+        padding: 0%;
+        width: 1440px;
+        height: 100px;
+    }
+
+    .social ul li{
+        margin: auto;
+    }
+
+    .social ul li .bx{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .social ul li a{
+        width: 50px;
+        height: 50px;
+    }
+
+    .info {
+        height: 180px;
+    }
+    
+    .info-1 , .info-2 , .info-3{
+        font-size: 20px;
+    }
+    
+    .info div .bx{
+        color: map-get($map: $palette, $key: "color-claro");
+        font-size: 50px;
+    }
+    
+    .info div p{
+        color: map-get($map: $palette, $key: "color-letras");
+    }
+
+}
+
+@media (max-width: $break2080) and (min-width: $break1451) {
+    .social{
+        height: 100px;
+        margin-top: 10px;
+    }
+    .social ul {
+        margin: 0%;
+        padding: 0%;
+        width: 1440px;
+        height: 100px;
+    }
+
+    .social ul li{
+        margin: auto;
+    }
+
+    .social ul li .bx{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .social ul li a{
+        width: 50px;
+        height: 50px;
+    }
+
+    .info {
+        height: 180px;
+    }
+}

@@ -1,0 +1,19 @@
+/*ABSTRACTS*/
+@import "./abstracts/variables";
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Hubballi&family=Oswald&family=Russo+One&family=Teko:wght@300;700&display=swap');
+
+/*BASE*/
+@import "./base/reset";
+
+/*LAYOUT*/
+@import "./layout/header";
+@import "./layout/section";
+@import "./layout/aside";
+@import "./layout/footer";
+@import "./layout/wp";
+@import "./layout/contacto";
+@import "./layout/paginasarticulos";
+
+/*BOOSTRAP*/
+@import "./boostrap/componentes";
+

@@ -1,0 +1,224 @@
+/* header */
+/* header base */
+
+.hamburnav{
+    display: none;
+}
+.logo img{
+    padding: 1px;
+    width: 300px;
+}
+header{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 27%, rgba(177,198,230,1) 33%, rgba(138,170,218,1) 38%, rgba(23,67,126,1) 63%, rgba(13,30,48,1) 92%);
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: $fuente-principal;
+    border-top: 1px solid white;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+.menu li{
+    margin-right: 1.5rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover{
+    color: map-get($map: $palette, $key: "color-letras");
+    border-color: map-get($map: $palette, $key: "color-letras");
+    border-bottom: 1.5px solid white;
+}
+
+.nav{
+    font-size: 1.3rem;
+}
+
+/* header responsive */
+@media (max-width: $break737) and (min-width: $break50) {
+    header{
+        display: none;
+    }
+    .hamburnav{
+        display: block;
+        font-family: $fuente-principal;
+    }
+}
+
+@media (max-width: $break915) and (min-width: $break738) {
+
+    header{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 27%, rgba(177,198,230,1) 33%, rgba(138,170,218,1) 38%, rgba(23,67,126,1) 63%, rgba(13,30,48,1) 92%);
+        height: 100px;
+    }
+
+    .logo img{
+        width: 160px;
+    }
+
+    .menu{
+        width: 70%;
+        margin-top: 35px;
+    }
+
+    .menu a{
+        color: rgb(255, 255, 255);
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    .menu a:hover{
+        color: map-get($map: $palette, $key: "color-letras");
+        border-color: map-get($map: $palette, $key: "color-letras");
+    }
+
+    .menu ul li{
+        padding: 0;
+    }
+
+    .menu ul{
+        padding: 0px;
+        margin: 0%;
+        justify-content: flex-end;
+    }
+
+    .nav{
+        margin: 0;
+    }
+
+}
+
+@media (max-width: $break1100) and (min-width: $break916){
+    header{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 27%, rgba(177,198,230,1) 33%, rgba(138,170,218,1) 38%, rgba(23,67,126,1) 63%, rgba(13,30,48,1) 92%);
+        height: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 10px;
+        font-family: $fuente-principal;
+        border-top: 1px solid white;
+    }
+
+    .logo img{
+        width: 220px;
+    }
+
+    .menu{
+        width: 70%;
+        margin-top: 0px;
+    }
+
+    .menu a{
+        color: rgb(255, 255, 255);
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .menu a:hover{
+        color: map-get($map: $palette, $key: "color-letras");
+        border-color: map-get($map: $palette, $key: "color-letras");
+    }
+
+    .menu ul li{
+        padding: 0;
+    }
+
+    .menu ul{
+        padding: 0px;
+        margin: 0%;
+        justify-content: flex-end;
+    }
+
+    .nav{
+        margin: 0;
+    }
+}
+
+@media (max-width: $break1450) and (min-width: $break1101) {
+
+    .hamburnav{
+        display: none;
+    }
+    header{
+        height: 130px;
+    }
+
+    .logo img{
+        width: 220px;
+    }
+
+    .menu{
+        width: 70%;
+        margin-top: 0px;
+    }
+
+    .menu a{
+        color: rgb(255, 255, 255);
+        padding: 6px;
+        font-size: 18px;
+    }
+
+    .menu ul li{
+        padding: 0;
+    }
+
+    .menu ul{
+        padding: 0px;
+        margin: 0%;
+        justify-content: flex-end;
+    }
+
+    .nav{
+        margin: 0;
+    }
+}
+
+@media (max-width: $break2080) and (min-width: $break1451) {
+    header{
+        height: 180px;
+    }
+
+    .logo img{
+        width: 285px;
+    }
+
+    .menu{
+        width: 70%;
+        margin-top: 0px;
+    }
+
+    .menu a{
+        color: rgb(255, 255, 255);
+        padding: 6px;
+        font-size: 20px;
+    }
+
+    .menu ul li{
+        padding: 0;
+    }
+
+    .menu ul{
+        padding: 0px;
+        margin: 0%;
+        justify-content: flex-end;
+    }
+
+    .nav{
+        margin: 0;
+    }
+}

@@ -1,0 +1,27 @@
+/* Componentes bootstrap */
+
+.breadcrumb{
+    font-family: $fuente-principal;
+    margin-left: 10px;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: map-get($map: $palette, $key: "color-logo");
+}
+.breadcrumb a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.page-nav{
+    display: grid;
+    grid-column: 1/3;
+}
+
+.pagination{
+    font-family: $fuente-principal;
+}
+
+.pagination a{
+    color: map-get($map: $palette, $key: "color-logo");
+}

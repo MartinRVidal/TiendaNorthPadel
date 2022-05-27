@@ -1,0 +1,200 @@
+/*footer*/
+/*footer base */
+footer{
+    background-color: map-get($map: $palette, $key:"color-oscurofooter");
+}
+
+.content1{
+    position: relative;
+    margin: 130px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+.content .text{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.content .p{
+    font-size: 2.1875rem;
+    font-weight: 600;
+}
+
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: map-get($map: $palette, $key: "color-letras");
+}
+.box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+    color: map-get($map: $palette, $key: "color-letras");
+}
+.box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: map-get($map: $palette, $key:"color-oscuro");
+}
+.box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: map-get($map: $palette, $key:"color-claro");
+    top: -10px;
+}
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+    color: map-get($map: $palette, $key: "color-letras");
+}
+.center .content .phone{
+    margin: 15px 0;
+    color: map-get($map: $palette, $key: "color-letras");
+}
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: map-get($map: $palette, $key: "color-letras");
+}
+.right form .msg{
+    margin-top: 10px;
+}
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: map-get($map: $palette, $key: "color-letras");
+    padding-left: 10px;
+    border: 1px solid black;
+}
+.right form input:focus, .right form textarea:focus{
+    outline-color: map-get($map: $palette, $key:"color-claro");
+}
+.right form input{
+    height: 35px;
+}
+.right form .btn{
+    margin: 0%;
+    padding: 0%;
+}
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: map-get($map: $palette, $key:"color-claro");
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+.right form .btn button:hover{
+    background: map-get($map: $palette, $key: "color-letras");
+}
+.bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: map-get($map: $palette, $key:"color-oscuro");
+}
+.bottom center span{
+    color: #656565;
+}
+.bottom center a{
+    color: map-get($map: $palette, $key: "color-letras");
+    text-decoration: none;
+}
+.bottom center a:hover{
+    text-decoration: underline;
+}
+
+.copy{
+    text-align: center;
+    color: map-get($map: $palette, $key: "color-letras");
+}
+
+.copy a{
+    text-decoration: none;
+    color: rgb(13, 159, 219);
+}
+
+/* footer responsive */
+
+@media (max-width: 737px) and (min-width: 50px){ 
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .main-content .box{
+        flex-basis: 50%;
+        padding: 10px 20px;
+    }
+
+    .box h2{
+        font-size: 15px;
+    }
+
+    .center .content .text{
+        font-size: 10px;
+    }
+    .right form .text{
+        font-size: 12px;
+    }
+    .right form .msg{
+        margin-top: 10px;
+    }
+    .right form input, .right form textarea{
+        font-size: 10px;
+    }
+    .right form .btn button{
+        font-size: 13px;
+    }
+    .copy{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: $break915) and (min-width: $break738) {
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .main-content .box{
+        flex-basis: 50%;
+        padding: 10px 20px;
+    }
+    .box h2{
+        font-size: 15px;
+    }
+
+    .center .content .text{
+        font-size: 10px;
+    }
+    .right form .text{
+        font-size: 12px;
+    }
+    .right form .msg{
+        margin-top: 10px;
+    }
+    .right form input, .right form textarea{
+        font-size: 10px;
+    }
+    .right form .btn button{
+        font-size: 13px;
+    }
+    .copy{
+        font-size: 10px;
+    }
+}

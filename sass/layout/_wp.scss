@@ -1,0 +1,52 @@
+/* whatsapp href */
+/* whatsapp base */
+@mixin whatsapp {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    bottom: 30px;
+    right: 30px;
+    background: transparent;
+    color: rgb(37,211,102);
+    border-radius: 100%;
+    font-size: 65px;
+    text-align: center;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.whatsapp .bx{
+    @include whatsapp;
+}
+
+.whatsapp .bx:hover{
+    transform: translate(0, -5px)
+}
+
+/* whatsapp responsive */
+
+@media (max-width: $break737) and (min-width: $break50){
+    .whatsapp .bx{ 
+        @include whatsapp;
+    }
+}
+
+@media (max-width: $break915) and (min-width: $break738) {
+
+    .whatsapp .bx{
+        @include whatsapp;
+    }
+}
+
+@media (max-width: $break1100) and (min-width: $break916){
+    .whatsapp .bx{
+        @include whatsapp;
+    }
+}
+
+@media (max-width: $break1450) and (min-width: $break1101) {
+    .whatsapp .bx{
+        @include whatsapp;
+    }
+}

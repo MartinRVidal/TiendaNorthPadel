@@ -1,0 +1,305 @@
+/* Pagina de contacto */
+
+/* contacto base */
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: 90px 200px 90px 400px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    font-family: $fuente-principal;
+}
+
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form a{
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.container-form a i{
+    color: map-get($map: $palette, $key: "color-logo");
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid map-get($map: $palette, $key: "color-logo");
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+    font-family: $fuente-secundaria;
+}
+
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+    font-family: $fuente-secundaria;
+}
+
+.container-form .btn-enviar{
+    font-family: $fuente-principal;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: map-get($map: $palette, $key: "color-logo");
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover{
+    background: map-get($map: $palette, $key: "color-oscuro");
+}
+
+/* contacto responsive */
+
+@media (max-width: $break737) and (min-width: $break50){
+    .container-form{
+        width: 100%;
+        max-width: 1100px;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        font-family: $fuente-principal;
+    }
+
+    .container-form h2{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        margin-left: 13px;
+        font-size: 25px
+    }
+    
+    .container-form p{
+        font-size: 10px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        margin-left: 13px;
+    }
+    
+    .container-form a{
+        font-size: 10px;
+        margin-left: 13px;
+        display: flex;
+        width: fit-content;
+    }
+    
+    .container-form a i{
+        font-size: 15px;
+    }
+    .container-form form{
+        width: fit-content;
+        margin-left: 13px;
+    }
+    .container-form form .campo, textarea{
+        width: 90%;
+        font-size: 10px;
+    }
+    .container-form form textarea{
+        max-width: 330px;
+        min-width: 230px;
+        min-height: 100px;
+        max-height: 100px;
+        font-size: 10px;
+    }
+
+    .container-form .btn-enviar{
+        font-size: 10px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: $break915) and (min-width: $break738) {
+    .container-form{
+        width: 100%;
+        max-width: 1100px;
+        margin: 10px 0px 0px 0px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 50px;
+        font-family: $fuente-principal;
+    }
+
+    .container-form h2{
+        margin-bottom: 15px;
+        margin-left: 13px;
+        margin-top: 30px;
+        font-size: 30px
+    }
+    
+    .container-form p{
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        margin-left: 13px;
+    }
+    
+    .container-form a{
+        font-size: 13px;
+        margin-left: 13px;
+    }
+    
+    .container-form a i{
+        font-size: 17px;
+    }
+
+    .container-form form{
+        margin-top: 30px;
+    }
+    .container-form form .campo, textarea{
+        width: 90%;
+        font-size: 10px;
+    }
+    
+    .container-form form textarea{
+        max-width: 530px;
+        min-width: 230px;
+        min-height: 100px;
+        max-height: 100px;
+        font-size: 10px;
+    }
+
+    .container-form .btn-enviar{
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: $break1100) and (min-width: $break916) {
+    .container-form{
+        width: 100%;
+        max-width: 1100px;
+        margin: 10px 0px 0px 0px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 50px;
+        font-family: $fuente-principal;
+    }
+
+    .container-form h2{
+        margin-bottom: 15px;
+        margin-left: 13px;
+        margin-top: 30px;
+        font-size: 30px
+    }
+    
+    .container-form p{
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        margin-left: 13px;
+    }
+    
+    .container-form a{
+        font-size: 13px;
+        margin-left: 13px;
+    }
+    
+    .container-form a i{
+        font-size: 17px;
+    }
+
+    .container-form form{
+        margin-top: 30px;
+    }
+    .container-form form .campo, textarea{
+        width: 90%;
+        font-size: 10px;
+    }
+    
+    .container-form form textarea{
+        max-width: 530px;
+        min-width: 230px;
+        min-height: 100px;
+        max-height: 100px;
+        font-size: 10px;
+    }
+
+    .container-form .btn-enviar{
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: $break1450) and (min-width: $break1101) {
+    .container-form{
+        width: 100%;
+        max-width: 1100px;
+        margin: 10px 0px 0px 10px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 50px;
+        font-family: $fuente-principal;
+    }
+    
+    .container-form h2{
+        margin-bottom: 15px;
+        font-size: 25px
+    }
+    
+    .container-form p{
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+    
+    .container-form a{
+        font-size: 13px;
+    }
+    
+    .container-form a i{
+        font-size: 17px;
+    }
+    
+    .container-form form .campo, textarea{
+        width: 90%;
+        font-size: 13px;
+    }
+    
+    .container-form form textarea{
+        max-width: 530px;
+        min-width: 230px;
+        min-height: 100px;
+        max-height: 100px;
+        font-size: 13px;
+    }
+
+    .container-form .btn-enviar{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: $break2080) and (min-width: $break1451) {
+    .container-form{
+        width: fit-content;
+    }
+
+    .info-form a{
+        display: flex;
+    }
+}
